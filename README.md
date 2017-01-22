@@ -18,13 +18,13 @@ categories:
 
 # Stock Market Prediction using Machine Learning
 ### Summarised Description
-This Project predicts closing value of a stock of a particular day in a market, given its value of opening, maximum, minimum and volume of a stock of that day.
-* The entire code has been written in Torch and Lua
+This Project predicts closing value of a stock of a particular day in the Stock market, given its value of opening, maximum, minimum and volume of a stock transacted throughtout that day.
+* The entire Code has been written in Torch and Lua
 * This project implements the basic algorithms of Machine Learning.
-* The Data Set used for training the Neural Network can be found here. [here](http://pages.swcp.com/stocks/).
+* The Data Set used for training the Neural Network can be found [here](http://pages.swcp.com/stocks/).
 
 ### Dataset description
-The Dataset has been taken from other [data repository] ,which contains more than one lakh stocks of one year. Our dataset just contains 20,232 stocks of which 10,232 has been used as Training Set and remaining as Validation Set. We have ignored dates and tickers as they are not useful for us to calculate our desired output. One can see how we have done it in [stock_function.lua].
+The Dataset has been taken from a [data repository] ,which contains details of more than one lakh stock transactions over the year. Our dataset just contains 20,232 stocks of which 10,232 has been used as Training Set and remaining as Validation Set. We have ignored dates and Company Tickers as they are not useful for us to calculate our desired output. One can see how we have done it in [stock_function.lua].
 Our model contains two hidden layer.One has 70 neurons and other one has 50 neurons.  
 This model applies [Tanh](https://github.com/torch/nn/blob/master/doc/transfer.md#tanh) function. 
 Tanh is defined as f(x) = (exp(x)-exp(-x))/(exp(x)+exp(-x))
