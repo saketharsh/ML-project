@@ -18,7 +18,7 @@ categories:
 
 # Stock Market Prediction using Machine Learning
 ### Summarised Description
->This Project predicts closing value of a stock of a particular day in a market, given its value of opening, maximum, minimum and volume of a stock of that day.
+This Project predicts closing value of a stock of a particular day in a market, given its value of opening, maximum, minimum and volume of a stock of that day.
 * The entire code has been written in Torch and Lua
 * This project implements the basic algorithms of Machine Learning.
 * The Data Set used for training the Neural Network can be found here. [here](http://pages.swcp.com/stocks/).
