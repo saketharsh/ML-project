@@ -16,8 +16,7 @@ categories:
 ---
 
 
-# Machine learning Project
-## Stock Market Predictor
+# Stock Market Prediction using Machine Learning
 ### Summarised Description
 >This Project predicts closing value of a stock of a particular day in a market, given its value of opening, maximum, minimum and volume of a stock of that day.
 * The entire code has been written in Torch and Lua
@@ -25,16 +24,13 @@ categories:
 * The Data Set used for training the Neural Network can be found here. [here](http://pages.swcp.com/stocks/).
 
 ### Dataset description
- >The Dataset has been taken from other [data repository] ,which contains more than one lakh stocks of one year. Our dataset just contains 20,232 stocks of which 10,232 has been used as Training Set and remaining as Validation Set. We have ignored dates and tickers as they are not useful for us to calculate our desired output. One can see how we have done it in [stock_function.lua].
+The Dataset has been taken from other [data repository] ,which contains more than one lakh stocks of one year. Our dataset just contains 20,232 stocks of which 10,232 has been used as Training Set and remaining as Validation Set. We have ignored dates and tickers as they are not useful for us to calculate our desired output. One can see how we have done it in [stock_function.lua].
 Our model contains two hidden layer.One has 70 neurons and other one has 50 neurons.  
 This model applies [Tanh](https://github.com/torch/nn/blob/master/doc/transfer.md#tanh) function. 
 Tanh is defined as f(x) = (exp(x)-exp(-x))/(exp(x)+exp(-x))
  We have used MSECriterion(Mean Squared Error) for our loss function. Since we are not intersted in backpropagation. One can find about this criterion [here](https://github.com/torch/nn/blob/master/doc/criterion.md).
 The training set has been trained by "**step**" function.The code for it is simple and can be understood after going through the Turorials given above. We have used batches of **batch_size = 200** .
-
-**eval** function gives us accuracy calculated after testing validation set with the parameters we got after training trainingset in "**step**" function.
-
-After iterating the same datasets for **200** times or (200 epochs) we have saved the final parameters of model in other file **model.net**. This helps us to use these parameters any other time without iterating over 200 times. This file has been used in files like [final_output.lua] and [graph_output.lua].
+**eval** function gives us accuracy calculated after testing validation set with the parameters we got after training trainingset in "**step**" function.After iterating the same datasets for **200** times or (200 epochs) we have saved the final parameters of model in other file **model.net**. This helps us to use these parameters any other time without iterating over 200 times. This file has been used in files like [final_output.lua] and [graph_output.lua].
 
 
 ![ScreenShot](https://github.com/MLcoderss/ML-project/raw/master/Screenshot%201.png)
@@ -47,21 +43,9 @@ After iterating the same datasets for **200** times or (200 epochs) we have save
   
   ![ScreenShot](https://github.com/MLcoderss/ML-project/raw/master/Screenshot%203.png)
 
-### Contributors
-Team Name- [ML-Coderss](http://mlcoderss.github.io/ML-project/)
 
-Team Membres :
-  * [Aditya Katara](https://github.com/adityakt)
-  * [Palash Agarwal](https://github.com/agpalash)
-  * [Piyush Bansal](https://github.com/piushbansal)
-  * [Saket Harsh](https://github.com/sharsh56625)
-
-### Credits  
-  * P Club Co-ordinator - [Vinayak Tantia]
-  * Coursera Co-founder - [Andrew Ng]
-
-### Website
-Our website is : http://mlcoderss.github.io/ML-project/
+ Contributors:-  Aditya Katara    Palash Agarwal    Piyush Bansal    Saket Harsh
+ Website : http://mlcoderss.github.io/ML-project/
 
 
 [//]: # 
