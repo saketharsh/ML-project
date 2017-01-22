@@ -42,6 +42,8 @@ The training set has been trained by "**step**" function.The code for it is simp
  
   
   ![ScreenShot](https://github.com/MLcoderss/ML-project/raw/master/Screenshot%203.png)
+  
+  ^ This is a screenshot of the deviation of our predicted values from the original data.
 
 
  Contributors:-  Aditya Katara    Palash Agarwal    Piyush Bansal    Saket Harsh
